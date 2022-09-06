@@ -16,7 +16,7 @@ function App() {
   const getData = () => {
     
     // fetch get request to the API endpoint 
-    fetch('http://ec2-54-177-59-140.us-west-1.compute.amazonaws.com:3000/register/all')
+    fetch('http://localhost:3000/register/all')
     .then(response => response.json())
     .then(json => setData(json?.users))
     .catch(error => console.log(error))
